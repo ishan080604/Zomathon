@@ -196,7 +196,7 @@ Treatment: LightGBM LambdaRank model
 1. Open the notebook in Google Colab
 
 2. Install dependencies:
-   `pip install lightgbm scikit-learn pandas numpy`
+   `pip install lightgbm scikit-learn pandas numpy sentence transformer`
 3. Run cells sequentially
 
 4. Model trains and outputs evaluation metrics
