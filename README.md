@@ -56,15 +56,15 @@ Each order session is treated as a query group, and candidates are ranked relati
 
 Since no real dataset was provided, a synthetic dataset was constructed to simulate realistic food delivery behavior:
 
-Multiple city tiers (Tier 1/2/3)
+- Multiple city tiers (Tier 1/2/3)
 
-Diverse cuisines and price bands
+- Diverse cuisines and price bands
 
-User price sensitivity and preferences
+- User price sensitivity and preferences
 
-Meal-time buckets (Breakfast, Lunch, Dinner, LateNight)
+- Meal-time buckets (Breakfast, Lunch, Dinner, LateNight)
 
-Variable cart sizes with optional add-ons
+- Variable cart sizes with optional add-ons
 
 ## Generated Files
 
