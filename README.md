@@ -200,3 +200,14 @@ Treatment: LightGBM LambdaRank model
 3. Run cells sequentially
 
 4. Model trains and outputs evaluation metrics
+
+# Sequential Modeling Extension
+
+To address the limitation of static ranking models, an LSTM-based sequence encoder was integrated into the recommendation pipeline. The sequence model learns cart evolution patterns by encoding previously selected items into a dense cart representation. The resulting embedding is concatenated with contextual, user, and item-level features before ranking with LightGBM LambdaRank.
+
+In the current prototype, item identifiers are used as sequence tokens due to the synthetic nature of the dataset. In a production deployment, the same architecture can be trained on real food-item sequences, allowing the model to learn behavioral transitions such as:
+
+Burger → Coke → Fries → Brownie
+
+This hybrid architecture combines sequential user behavior modeling with contextual ranking signals to generate more personalized add-on recommendations.
+
